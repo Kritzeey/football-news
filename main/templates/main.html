@@ -65,8 +65,9 @@
         </div>
         {% else %}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {% for news in news_list %} {% include 'card_news.html' with
-            news=news %} {% endfor %}
+            {% for news in news_list %} 
+                {% include 'card_news.html' with news=news %} 
+            {% endfor %}
         </div>
         {% endif %}
     </div>
